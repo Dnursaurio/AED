@@ -1,2 +1,4 @@
 ﻿  Bubble Sort Functores.cpp
+D:\AED\Bubble Sort Functores\Bubble Sort Functores.cpp(68,32): warning C4018: '<': no coinciden signed/unsigned
+  LINK : no se encontró D:\AED\Bubble Sort Functores\x64\Debug\Bubble Sort Functores.exe o no lo generó el último vínculo incremental; ejecutando vínculo completo
   Bubble Sort Functores.vcxproj -> D:\AED\Bubble Sort Functores\x64\Debug\Bubble Sort Functores.exe
