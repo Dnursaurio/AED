@@ -1,5 +1,7 @@
 #include <iostream>
 #include <chrono>
+#include <random>
+#include <set>
 using namespace std;
 using namespace chrono;
 
@@ -23,12 +25,6 @@ void bubble(long long int arr[], long long int tam)
 	auto tiempo_fin = high_resolution_clock::now();
 	auto duracion = duration_cast<microseconds>(tiempo_fin - tiempo_ini);
 
-	for (long long int u = 0; u <= tam - 1; u++)
-	{
-		cout << arr[u] << " ";
-	}
-	cout << endl;
-
 	cout << "Tiempo de ejecucion: " << duracion.count() << " microsegundos" << endl;
 }
 
@@ -36,7 +32,33 @@ int main()
 {
 	cout << "-----------------Bubble Sort Normal-----------------" << endl;
 	cout << "Array de 10 elementos:" << endl;
-	long long int arr1[10] = { 6,9,7,4,3,56,80,12,35,67 };
-	bubble(arr1, 10);
-	return 0;
+    const long long int N = 1000000; // 1 millón de elementos
+    set<long long int> unique_elements;
+
+    // Generador de números aleatorios
+    random_device rd;
+    mt19937 gen(rd()); // Mersenne Twister pseudo-random generator
+    uniform_int_distribution<long long int> dis(1, 10000000); // Rango aleatorio
+
+    // Llenar el set con 1 millón de elementos aleatorios no repetidos
+    while (unique_elements.size() < N)
+    {
+        unique_elements.insert(dis(gen));
+    }
+
+    // Transferir los elementos del set al arreglo
+    long long int* arr = new long long int[N];
+    int i = 0;
+    for (auto it = unique_elements.begin(); it != unique_elements.end(); ++it, ++i)
+    {
+        arr[i] = *it;
+    }
+
+    // Llamar a la función bubble sort
+    bubble(arr, N);
+
+    // Limpiar memoria
+    delete[] arr;
+
+    return 0;
 }
