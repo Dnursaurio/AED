@@ -3,58 +3,37 @@
 using namespace std;
 using namespace chrono;
 
-long long int ascendente(long long int arr[], long long int tam)
+bool ascendente(long long int a, long long int b)
 {
-	long long int* p;
-	long long int* q;
+	return a > b;
+}
 
+bool descendente(long long int a, long long int b)
+{
+	return a < b;
+}
+
+void bubble(long long int arr[], long long int tam, bool (*comp)(long long int, long long int))
+{
 	auto time1 = high_resolution_clock::now();
-
-	for (p = arr + 0; p <= arr + tam - 1; p++)
+	for (long long int* p = arr + 0; p <= arr + tam - 1; p++)
 	{
-		for (q = arr + 0; q < arr + tam - 1; q++)
+		for (long long int* q = arr + 0; q < arr + tam - 1; q++)
 		{
-			if (*q > *(q + 1))
+			if (comp(*q, *(q + 1)))
 			{
-				swap(*q, *(q + 1));
+				long long int tmp = *q;
+				*q = *(q + 1);
+				*(q + 1) = tmp;
 			}
 		}
 	}
-
 	auto time2 = high_resolution_clock::now();
 	auto duracion = duration_cast<microseconds>(time2 - time1);
-
-	cout << "el tiempo de ejecucion del array asccendente es de: " << duracion.count() << " microsegundos." << endl;
-	return 0;
+	cout << "el tiempo de ejecucion es de: " << duracion.count() << " microsegundos" << endl;
 }
 
-long long int descendente(long long int arr[], long long int tam)
-{
-	long long int* p;
-	long long int* q;
-
-	auto time1 = high_resolution_clock::now();
-
-	for (p = arr + 0; p <= arr + tam - 1; p++)
-	{
-		for (q = arr + 0; q < arr + tam - 1; q++)
-		{
-			if (*q < *(q + 1))
-			{
-				swap(*q, *(q + 1));
-			}
-		}
-	}
-
-	auto time2 = high_resolution_clock::now();
-	auto duracion = duration_cast<microseconds>(time2 - time1);
-
-	cout << "el tiempo de ejecucion del array desccendente es de: " << duracion.count() << " microsegundos." << endl;
-
-	return 0;
-}
-
-long long int imprimir(long long int arr[], long long int tam)
+void imprimir(long long int arr[], long long int tam)
 {
 	long long int* u;
 
@@ -63,16 +42,11 @@ long long int imprimir(long long int arr[], long long int tam)
 		cout << *u << " ";
 	}
 	cout << endl;
-
-	return 0;
 }
 
 int main()
 {
 	cout << "---------------Bubble Sort Puntero a Funcion---------------" << endl;
-	long long int (*ptr_funcion1) (long long int arr[], long long int) = NULL;
-	long long int (*ptr_funcion2) (long long int arr[], long long int) = NULL;
-
 	long long int arr[100] = { 3,24,65,76,9,32,12,56,74,1,
 		3,24,65,76,9,32,12,56,74,1,
 		3,24,65,76,9,32,12,56,74,1, 
@@ -84,13 +58,8 @@ int main()
 		3,24,65,76,9,32,12,56,74,1,
 		3,24,65,76,9,32,12,56,74,1 };
 
-	ptr_funcion1 = ascendente;
-	ptr_funcion2 = descendente;
-	cout << "El array ascedente: " << endl;
-	ptr_funcion1(arr,100);
+	bubble(arr, 100, ascendente);
 	imprimir(arr, 100);
-	cout << "El array descedente: " << endl;
-	ptr_funcion2(arr, 100);
-	imprimir(arr,100);
+
 	return 0;
 }

@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|solutionrelative:Bubble Sort Polimorfico\\bubble_Sort_Polimorfico.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\descendente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|solutionrelative:Bubble Sort Polimorfico\\descendente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\ascendente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|solutionrelative:Bubble Sort Polimorfico\\ascendente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Clase_comparar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|solutionrelative:Bubble Sort Polimorfico\\Clase_comparar.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\descendente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3D0DDF21-D94D-42C5-89E8-DDC971597533}|Bubble Sort Polimorfico\\Bubble Sort Polimorfico.vcxproj|solutionrelative:Bubble Sort Polimorfico\\descendente.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,42 +34,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "descendente.h",
               "DocumentMoniker": "D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\descendente.h",
               "RelativeDocumentMoniker": "Bubble Sort Polimorfico\\descendente.h",
               "ToolTip": "D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\descendente.h",
               "RelativeToolTip": "Bubble Sort Polimorfico\\descendente.h",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAcwBYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAcwAcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-25T04:36:27.376Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T04:36:27.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ascendente.h",
               "DocumentMoniker": "D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\ascendente.h",
               "RelativeDocumentMoniker": "Bubble Sort Polimorfico\\ascendente.h",
               "ToolTip": "D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\ascendente.h",
               "RelativeToolTip": "Bubble Sort Polimorfico\\ascendente.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-25T03:28:09.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T03:28:09.582Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Clase_comparar.h",
               "DocumentMoniker": "D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Clase_comparar.h",
               "RelativeDocumentMoniker": "Bubble Sort Polimorfico\\Clase_comparar.h",
               "ToolTip": "D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Clase_comparar.h",
               "RelativeToolTip": "Bubble Sort Polimorfico\\Clase_comparar.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-25T02:45:59.728Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T02:45:59.728Z"
             },
             {
               "$type": "Document",
@@ -79,7 +76,7 @@
               "RelativeDocumentMoniker": "Bubble Sort Polimorfico\\bubble_Sort_Polimorfico.cpp",
               "ToolTip": "D:\\AED\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\Bubble Sort Polimorfico\\bubble_Sort_Polimorfico.cpp",
               "RelativeToolTip": "Bubble Sort Polimorfico\\bubble_Sort_Polimorfico.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-25T02:57:08.038Z",
               "EditorCaption": ""

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED\\Generador de arrays de n elementos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B1EF4C46-E9EA-4B46-84DB-9DCE43938232}|Generador de arrays de n elementos.vcxproj|D:\\AED\\Generador de arrays de n elementos\\gane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B1EF4C46-E9EA-4B46-84DB-9DCE43938232}|Generador de arrays de n elementos.vcxproj|solutionrelative:gane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "gane.cpp",
+              "DocumentMoniker": "D:\\AED\\Generador de arrays de n elementos\\gane.cpp",
+              "RelativeDocumentMoniker": "gane.cpp",
+              "ToolTip": "D:\\AED\\Generador de arrays de n elementos\\gane.cpp",
+              "RelativeToolTip": "gane.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-28T19:08:34.825Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

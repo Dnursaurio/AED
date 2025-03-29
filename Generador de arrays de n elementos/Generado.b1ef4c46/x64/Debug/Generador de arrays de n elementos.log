@@ -1,0 +1,3 @@
+﻿  gane.cpp
+D:\AED\Generador de arrays de n elementos\gane.cpp(9,25): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Generador de arrays de n elementos.vcxproj -> D:\AED\Generador de arrays de n elementos\x64\Debug\Generador de arrays de n elementos.exe
