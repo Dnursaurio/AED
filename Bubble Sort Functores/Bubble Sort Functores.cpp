@@ -7,7 +7,7 @@ using namespace chrono;
 
 struct Ascendente
 {
-	bool operator ()(long long int a, long long int b)
+	inline bool operator ()(long long int a, long long int b)
 	{
 		return a > b;
 	}
@@ -15,7 +15,7 @@ struct Ascendente
 
 struct Descendente
 {
-	bool operator ()(long long int a, long long int b)
+	inline bool operator ()(long long int a, long long int b)
 	{
 		return a < b;
 	}
