@@ -15,23 +15,37 @@ template <class T>
 class Pila
 {
 public:
-	void Push(T elemento)
+	bool Push(T elemento)
 	{
-		if (top==NULL)
+		if (top == NULL)
 		{
-			arr[0] = elemento;
 			top = arr + 0;
+			*top = elemento;
+			print(arr, 10);
+			return true;
 		}
-		else if (top != nullptr)
+		else if(top < arr + 9)
 		{
 			top++;
 			*top = elemento;
+			print(arr, 10);
+			return true;
 		}
-		print(arr, 10);
+		else
+		{
+			cout << "pila llena, no entra el elemento (" << elemento << ") haz Pop antes, gracias" << endl;
+			print(arr, 10);
+			return false;
+		}
+		
 	}
-	void Pop(T& elemento)
+	bool Pop(T& elemento)
 	{
-
+		T* popper = &elemento;
+		if (top > arr + 0)
+		{
+			top--;
+		}
 	}
 private:
 	T* top = nullptr;
@@ -54,5 +68,8 @@ int main()
 	p.Push(12);
 	p.Push(18);
 	p.Push(10);
+	cout << "anadiendo elementos adicionales" << endl;
+	p.Push(2);
+	p.Push(13);
 	return 0;
 }
