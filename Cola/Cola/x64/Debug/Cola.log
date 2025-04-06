@@ -1,0 +1,5 @@
+﻿  Cola.cpp
+D:\AED\Cola\Cola.cpp(8,47): error C2760: error de sintaxis: ";" no se esperaba aquí; se esperaba ")"
+D:\AED\Cola\Cola.cpp(8,48): error C3878: error de sintaxis: token “)” inesperado después de “expression-statement”
+D:\AED\Cola\Cola.cpp(8,48): message : se omitió la recuperación de errores: ")"
+D:\AED\Cola\Cola.cpp(10,12): error C2065: 'i': identificador no declarado

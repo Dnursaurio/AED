@@ -15,23 +15,53 @@ template <class T>
 class Pila
 {
 public:
-	void Push(T elemento)
+	bool Push(T elemento)
 	{
 		if (top==NULL)
 		{
 			arr[0] = elemento;
 			top = arr + 0;
+			print(arr, 10);
+			return true;
 		}
-		else if (top != nullptr)
+		else if (top < arr + 9)
 		{
 			top++;
 			*top = elemento;
+			print(arr, 10);
+			return true;
 		}
-		print(arr, 10);
+		else
+		{
+			cout << "Pila llena el elemento (" << elemento << ") sobrepasa el tamaño del array \nLa pila queda igual: ";
+			print(arr, 10);
+			return false;
+		}
+		
 	}
-	void Pop(T& elemento)
+	bool Pop(T& elemento)
 	{
-
+		if (top > arr + 0)
+		{
+			cout << "Eliminando elemento (" << *top << ") de la pila" << endl;
+			*top = 0;
+			top--;
+			print(arr, 10);
+			return true;
+		}
+		else if (top == arr + 0)
+		{
+			*top = 0;
+			cout << "Eliminaste el ultimo elemento del array, la pila que asi: ";
+			print(arr, 10);
+			top = nullptr;
+			return true;
+		}
+		else
+		{
+			cout << "Pila vacia" << endl;
+			return false;
+		}
 	}
 private:
 	T* top = nullptr;
@@ -42,9 +72,9 @@ int main()
 {
 	cout << "-------------Pila-------------" << endl;
 	Pila <int> p;
-	cout << "iniciando pila ..." << endl;
+	cout << "Iniciando pila ..." << endl;
 	p.Push(14);
-	cout << "agregando elementos ..." << endl;
+	cout << "Agregando elementos ..." << endl;
 	p.Push(20);
 	p.Push(8);
 	p.Push(3);
@@ -54,5 +84,22 @@ int main()
 	p.Push(12);
 	p.Push(18);
 	p.Push(10);
+	cout << "Anadiendo elementos excedentes ..." << endl;
+	p.Push(2);
+	cout << "Eliminando elementos ..." << endl;
+	int eliminado;
+	p.Pop(eliminado);
+	p.Pop(eliminado);
+	p.Pop(eliminado);
+	p.Pop(eliminado);
+	p.Pop(eliminado);
+	p.Pop(eliminado);
+	p.Pop(eliminado);
+	p.Pop(eliminado);
+	p.Pop(eliminado);
+	cout << "Ultimo elemento ..." << endl;
+	p.Pop(eliminado);
+	cout << "Eliminacion fuera de rango ..." << endl;
+	p.Pop(eliminado);
 	return 0;
 }
