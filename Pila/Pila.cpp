@@ -17,28 +17,26 @@ class Pila
 public:
 	bool Push(T elemento)
 	{
-		if (top==NULL)
+		if (top == NULL)
 		{
-			arr[0] = elemento;
 			top = arr + 0;
 			print(arr, 10);
 			return true;
 		}
 		else if (top < arr + 9)
 		{
-			top++;
 			*top = elemento;
 			print(arr, 10);
 			return true;
 		}
 		else
 		{
-			cout << "Pila llena el elemento (" << elemento << ") sobrepasa el tamaño del array \nLa pila queda igual: ";
 			print(arr, 10);
 			return false;
 		}
 		
 	}
+
 	bool Pop(T& elemento)
 	{
 		if (top > arr + 0)
@@ -66,6 +64,7 @@ public:
 private:
 	T* top = nullptr;
 	T arr[10];
+
 };
 
 int main()
