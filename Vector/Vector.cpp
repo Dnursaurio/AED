@@ -23,15 +23,30 @@ public:
 	}
 	bool PushFront(T valor)
 	{
-		if (ptr != nullptr)
+		if (ptr < ptr + tam - 1)
 		{
-			for (T* p = ptr + 1; p <= ptr + tam - 1; p++)
+			for (T* p = ptr + tam - 1; p >= ptr; p--)
 			{
-				*p = *(p-1);
+				T* q = p - 1;
+				*p = *q;
 			}
 			*ptr = valor;
 			print<int>(ptr, tam);
 			return true;
+		}
+		else
+		{
+			T* ref = ptr;
+			cout << "ampliando vector ..." << endl;
+			T ntam = tam * 2;
+			ptr = new T[ntam];
+			cout << "copiando elemementos ..." << endl;
+			for (T* i = ptr; i <= ptr + tam - 1; i++)
+			{
+				*i = *ptr;
+			}
+			delete[] ref;
+			print<int>(ptr, ntam);
 		}
 	}
 	void PopFront(T& valor);
@@ -49,5 +64,13 @@ int main()
 	Cvector <int> V1{10};
 	V1.PushFront(1);
 	V1.PushFront(2);
+	V1.PushFront(4);
+	V1.PushFront(5);
+	V1.PushFront(15);
+	V1.PushFront(19);
+	V1.PushFront(123);
+	V1.PushFront(40);
+	V1.PushFront(32);
+	V1.PushFront(54);
 	V1.PushFront(4);
 }
