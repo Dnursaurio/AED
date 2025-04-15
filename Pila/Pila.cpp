@@ -20,11 +20,13 @@ public:
 		if (top == NULL)
 		{
 			top = arr + 0;
+			*top = elemento;
 			print(arr, 10);
 			return true;
 		}
 		else if (top < arr + 9)
 		{
+			top++;
 			*top = elemento;
 			print(arr, 10);
 			return true;
