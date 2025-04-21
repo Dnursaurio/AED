@@ -115,13 +115,6 @@ int main()
 	V1.PopFront(terminated_front);
 	V1.PopFront(terminated_front);
 	V1.PopFront(terminated_front);
-	V1.PopFront(terminated_front);
-	V1.PopFront(terminated_front);
-	V1.PopFront(terminated_front);
-	V1.PopFront(terminated_front);
-	V1.PopFront(terminated_front);
-	V1.PopFront(terminated_front);
-	V1.PopFront(terminated_front);
-	V1.PopFront(terminated_front);
+	
 	return 0;
 }
