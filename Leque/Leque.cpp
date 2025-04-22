@@ -9,14 +9,15 @@ public:
 	Leque(int tamano):tam(tamano)
 	{
 		mapa = new T* [tam];
-		mapeador = mapa;
+		mapa[0] = &mapeador;
 	}
 	void PushFront(T valor)
 	{
-		*mapeador = new T[tam];
+		mapeador = new T[tam];
 		if (mapeador < mapa + tam - 1)
 		{
-			**mapeador = valor;
+			*mapeador = valor;
+			cout << *mapeador << endl;
 		} 
 	}
 	/*
@@ -28,7 +29,7 @@ public:
 
 private:
 	T** mapa;
-	T** mapeador;
+	T* mapeador;
 	int tam;
 };
 

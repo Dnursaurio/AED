@@ -1,2 +1,17 @@
 ﻿  Leque.cpp
-  Leque.vcxproj -> D:\AED\Leque\x64\Debug\Leque.exe
+D:\AED\Leque\Leque.cpp(12,13): error C2440: '=': no se puede realizar la conversión de 'T **' a 'T *'
+D:\AED\Leque\Leque.cpp(12,13): error C2440:         with
+D:\AED\Leque\Leque.cpp(12,13): error C2440:         [
+D:\AED\Leque\Leque.cpp(12,13): error C2440:             T=int
+D:\AED\Leque\Leque.cpp(12,13): error C2440:         ]
+      D:\AED\Leque\Leque.cpp(12,13):
+      Los tipos señalados no están relacionados; la conversión requiere reinterpret_cast, conversión de estilo de C o conversión de estilo de función entre paréntesis
+      D:\AED\Leque\Leque.cpp(12,13):
+      el contexto de creación de instancias de la plantilla (el más antiguo primero) es
+          D:\AED\Leque\Leque.cpp(38,12):
+          Vea la referencia a la creación de una instancia de clase plantilla "Leque<int>" que se está compilando
+          D:\AED\Leque\Leque.cpp(9,2):
+          al compilar la función del miembro clase plantilla "Leque<int>::Leque(int)"
+              D:\AED\Leque\Leque.cpp(38,14):
+              vea la primera referencia a “Leque<int>::Leque” en “main”
+  
