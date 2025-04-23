@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED\\lista ordenada con Nodos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1135552B-C5EF-4F23-9595-F4B983C9EC76}|lista ordenada con Nodos\\lista ordenada con Nodos.vcxproj|D:\\AED\\lista ordenada con Nodos\\lista ordenada con Nodos\\Soter-Forward-List.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1135552B-C5EF-4F23-9595-F4B983C9EC76}|lista ordenada con Nodos\\lista ordenada con Nodos.vcxproj|solutionrelative:lista ordenada con Nodos\\Soter-Forward-List.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Soter-Forward-List.cpp",
+              "DocumentMoniker": "D:\\AED\\lista ordenada con Nodos\\lista ordenada con Nodos\\Soter-Forward-List.cpp",
+              "RelativeDocumentMoniker": "lista ordenada con Nodos\\Soter-Forward-List.cpp",
+              "ToolTip": "D:\\AED\\lista ordenada con Nodos\\lista ordenada con Nodos\\Soter-Forward-List.cpp",
+              "RelativeToolTip": "lista ordenada con Nodos\\Soter-Forward-List.cpp",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAEoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-22T20:30:35.933Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
