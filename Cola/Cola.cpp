@@ -3,7 +3,7 @@
 using namespace std;
 
 template<class T1>
-void imprimir(T1 arr[],int tam)
+void imprimir(T1 arr[], int tam)
 {
 	for (T1* i = arr + 0; i <= arr + tam - 1; i++)
 	{
@@ -18,7 +18,7 @@ class Cola
 public:
 	bool Push(T elemento)
 	{
-		if (head == nullptr && tail == nullptr)
+		if (tail == nullptr)
 		{
 			tail = arr + 0;
 			head = tail;
@@ -43,15 +43,18 @@ public:
 	}
 	bool Pop(T& elemento)
 	{
-		if (head <= arr + 9)
+		if (head < arr + 9)
 		{
-			*head = 0;
 			head++;
+			cout << "se elimino el elemnto (" << *head << ") solo se mueve el ptr ya  ese valor no cuenta" << endl;
+			*head = 0;
+			//head++;
 			imprimir<int>(arr, 10);
 			return true;
 		}
-		else
+		else if (head == arr + 9)
 		{
+			*head = 0;
 			cout << "cola vacia ._." << endl;
 			imprimir<int>(arr, 10);
 			head = NULL;
@@ -85,7 +88,9 @@ int main()
 	cout << "Eliminando elementos ..." << endl;
 	int eliminado;
 	c.Pop(eliminado);
+	c.Push(11);
 	c.Pop(eliminado);
+	c.Push(13);
 	c.Pop(eliminado);
 	c.Pop(eliminado);
 	c.Pop(eliminado);

@@ -1,0 +1,7 @@
+﻿  Cola.cpp
+  Generando código
+  Previous IPDB not found, fall back to full compilation.
+D:\AED\Cola\Cola.cpp(63): warning C4715: 'Cola<int>::Pop': no todas las rutas de acceso de control devuelven un valor
+  All 16 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Generación de código finalizada
+  Cola.vcxproj -> D:\AED\Cola\x64\Release\Cola.exe
