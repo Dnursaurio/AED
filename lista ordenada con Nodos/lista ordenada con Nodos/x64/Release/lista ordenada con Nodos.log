@@ -1,7 +1,6 @@
 ﻿  Soter-Forward-List.cpp
   Generando código
-D:\AED\lista ordenada con Nodos\lista ordenada con Nodos\Soter-Forward-List.cpp(41): warning C4715: 'CList::Find': no todas las rutas de acceso de control devuelven un valor
-  3 of 19 functions (15.8%) were compiled, the rest were copied from previous compilation.
+  4 of 19 functions (21.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
