@@ -18,21 +18,22 @@ class CList
 public:
 	CList()
 	{
-		return;
+		head = 0;
 	}
 	~CList()
 	{
-		return;
+
+	}
+	void print()
+	{
+		for (CNode* T = head; T; T = T->next)
+		{
+			cout << T->value << " ";
+		}
+		cout << endl;
 	}
 	bool Find(int val, CNode**& p)
 	{
-		/*
-		p = &head;
-		while (*p && (*p)->value < val tambien esa valido (**p).value)
-		{
-			p = &((*p)->next);
-			return *p && (*p)->value == val;
-		}*/
 		for (p = &head;*p && (*p)->value < val;p = &((*p)->next))
 		{
 			return *p && (*p)->value == val;
@@ -68,13 +69,6 @@ public:
 			return true;
 		}
 	}
-	void print()
-	{
-		for (CNode* T = head;T;T = T->next)
-		{
-			cout << T->value << " ";
-		}
-	}
 private:
 	CNode* head;
 };
@@ -84,7 +78,10 @@ int main()
 	CList lista;
 	lista.Insert(2);
 	lista.Insert(11);
-	lista.Insert(4);
 	lista.Insert(60);
+	lista.Insert(4);
+	lista.Insert(3);
 	lista.print();
+
+	return 0;
 }
