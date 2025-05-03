@@ -1,0 +1,3 @@
+﻿  lista.cpp
+D:\AED\lista\lista\lista.cpp(49,1): warning C4715: 'List::PushFront': no todas las rutas de acceso de control devuelven un valor
+  lista.vcxproj -> D:\AED\lista\x64\Debug\lista.exe

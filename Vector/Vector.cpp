@@ -53,7 +53,7 @@ public:
 				*pegador = *copiador;
 				pegador++;
 			}
-			ctrlfront = pegador;
+			ctrlfront = pegador - 1;
 			delete[] ptr;
 			//actualizo tam para nuevas expanciones
 			tam = ntam;
@@ -78,10 +78,51 @@ public:
 	}
 	void PushBack(T valor)
 	{
-
+		if (ctrlfront < ptr + tam - 1)
+		{
+			T* helpback = ctrlfront + 1;
+			*helpback = valor;
+			ctrlfront++;
+			print<int>(ptr, tam);
+		}
+		else
+		{
+			//creo el array nuevo
+			int ntam = tam * 2;
+			T* ptr1 = new T[ntam];
+			//copiar elementos del array anterior
+			pegador = ptr1;
+			for (copiador = ptr; copiador <= ptr + tam - 1; copiador++)
+			{
+				*pegador = *copiador;
+				pegador++;
+			}
+			ctrlfront = pegador - 1;
+			delete[] ptr;
+			//actualizo tam para nuevas expanciones
+			tam = ntam;
+			ptr = ptr1;
+			T* helpback = ctrlfront + 1;
+			*helpback = valor;
+			ctrlfront++;
+			print<int>(ptr, ntam);
+		}
 	}
-	/*void PopBack(T& valor);
-	void operator [](T& index);*/
+	void PopBack(T& valor)
+	{
+		if (ctrlfront > ptr)
+		{
+			*ctrlfront = 0; // el 0 es solo simbolico
+			ctrlfront--;
+			print<int>(ptr, tam);
+		}
+		else
+		{
+			ctrlfront = NULL;
+			print<int>(ptr, tam);
+		}
+	}
+	//void operator [](T& index);
 private:
 	T* ptr;
 	T* ctrlfront = nullptr;
@@ -94,8 +135,9 @@ int main()
 	/*aca mi tamaño se hace 10
 	tam = 10, entonces mi arreglo tiene tamaño 10*/
 	cout << "-------------Vector-------------" << endl;
-	Cvector <int> V1{10};
+	Cvector <int> V1{ 10 };
 	int terminated_front;
+	int terminated_back;
 	cout << "Iniciando vector con PushFront ..." << endl;
 	V1.PushFront(1);
 	V1.PushFront(2);
@@ -115,6 +157,19 @@ int main()
 	V1.PopFront(terminated_front);
 	V1.PopFront(terminated_front);
 	V1.PopFront(terminated_front);
-	
+	V1.PushBack(16);
+	V1.PushBack(34);
+	V1.PushBack(38);
+	V1.PushBack(44);
+	V1.PushBack(346);
+	V1.PushBack(36);
+	V1.PushBack(67);
+	V1.PushBack(68);
+	V1.PushBack(60);
+	V1.PushBack(90);
+	V1.PushBack(696);
+	V1.PushBack(43);
+	V1.PushBack(62);
+	V1.PopBack(terminated_back);
 	return 0;
 }

@@ -19,6 +19,7 @@ public:
     BTree()
     {
         root = NULL;
+        replace = 0;
     }
 
     ~BTree()
@@ -53,19 +54,64 @@ public:
         {
             return 0;
         }
-        else
+        else if ((*p)->nodes[0] && (*p)->nodes[1])
         {
-            
+            Node** q = REPLACE(p);
+            (*p)->value = (*q)->value;
+            p = q;
         }
+        Node* t = *p;
+        *p = (*p)->nodes[(*p)->nodes[0] == 0];
+        delete t;
+        return 1;
+    }
+
+
+
+    void print()
+    {
+        inorder(root);
+        cout << endl;
     }
 
 private:
     Node* root;
+    bool replace;
+    Node** REPLACE(Node** q)
+    {
+        replace = !replace;
+        q = &((*q)->nodes[!replace]);
+        while ((*q)->nodes[replace])
+        {
+            q = &((*q)->nodes[replace]);
+        }
+        return q;
+    }
+    void inorder(Node* n)
+    {
+        if (!n)
+        {
+            return;
+        }
+        else
+        {
+            inorder(n->nodes[0]);
+            cout << n->value << " ";
+            inorder(n->nodes[1]);
+        }
+    }
 };
 
 int main()
 {
     BTree t;
-
+    t.Insert(2);
+    t.Insert(5);
+    t.Insert(9);
+    t.Insert(3);
+    t.Insert(10);
+    t.print();
+    t.Remove(5);
+    t.print();
     return 0;
 }
