@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED\\queue\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{46E422F7-874E-47FA-BA45-C019CA496800}|queue\\queue.vcxproj|D:\\AED\\queue\\preg_queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{46E422F7-874E-47FA-BA45-C019CA496800}|queue\\queue.vcxproj|solutionrelative:preg_queue.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "preg_queue.cpp",
+              "DocumentMoniker": "D:\\AED\\queue\\preg_queue.cpp",
+              "RelativeDocumentMoniker": "preg_queue.cpp",
+              "ToolTip": "D:\\AED\\queue\\preg_queue.cpp",
+              "RelativeToolTip": "preg_queue.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-05T02:40:46.123Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

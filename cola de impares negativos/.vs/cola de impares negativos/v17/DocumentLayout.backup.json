@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED\\cola de impares negativos\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A215AB6D-660E-451F-AB6D-0BD464F5B217}|cola de impares negativos\\cola de impares negativos.vcxproj|D:\\AED\\cola de impares negativos\\cola de impares negativos\\cola_impares_negativos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A215AB6D-660E-451F-AB6D-0BD464F5B217}|cola de impares negativos\\cola de impares negativos.vcxproj|solutionrelative:cola de impares negativos\\cola_impares_negativos.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cola_impares_negativos.cpp",
+              "DocumentMoniker": "D:\\AED\\cola de impares negativos\\cola de impares negativos\\cola_impares_negativos.cpp",
+              "RelativeDocumentMoniker": "cola de impares negativos\\cola_impares_negativos.cpp",
+              "ToolTip": "D:\\AED\\cola de impares negativos\\cola de impares negativos\\cola_impares_negativos.cpp",
+              "RelativeToolTip": "cola de impares negativos\\cola_impares_negativos.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T03:16:57.491Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

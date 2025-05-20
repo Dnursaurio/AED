@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 using namespace std;
 
 struct Node
@@ -66,11 +67,109 @@ public:
         return 1;
     }
 
+    void inorder(Node* n)
+    {
+        if (!n)
+        {
+            return;
+        }
+        else
+        {
+            inorder(n->nodes[0]);
+            cout << n->value << " ";
+            inorder(n->nodes[1]);
+        }
+    }
 
+    void Reverse(Node* n)
+    {
+        if (!n)
+        {
+            return;
+        }
+        else
+        {
+            Reverse(n->nodes[1]);
+            cout << n->value << " ";
+            Reverse(n->nodes[0]);
+        }
+    }
 
-    void print()
+    void PreOrder(Node* n)
+    {
+        if (!n)
+        {
+            return;
+        }
+        else
+        {
+            cout << n->value << " ";
+            PreOrder(n->nodes[0]);
+            PreOrder(n->nodes[1]);
+        }
+    }
+
+    void PostOrder(Node* n)
+    {
+        if (!n)
+        {
+            return;
+        }
+        else
+        {
+            PostOrder(n->nodes[0]);
+            PostOrder(n->nodes[1]);
+            cout << n->value << " ";
+        }
+    }
+
+    void level(Node* n)
+    {
+        queue<Node*>q;
+        q.push(n);
+        while (!q.empty())
+        {
+            n = q.front();
+            cout << n->value << " ";
+            if (n->nodes[0])
+            {
+                q.push(n->nodes[0]);
+            }
+            if (n->nodes[1])
+            {
+                q.push(n->nodes[1]);
+            }
+            q.pop();
+        } 
+    }
+
+    void print_InOrder()
     {
         inorder(root);
+        cout << endl;
+    }
+
+    void print_PreOrder()
+    {
+        PreOrder(root);
+        cout << endl;
+    }
+
+    void print_PostOrder()
+    {
+        PostOrder(root);
+        cout << endl;
+    }
+
+    void print_Reverse()
+    {
+        Reverse(root);
+        cout << endl;
+    }
+
+    void print_level()
+    {
+        level(root);
         cout << endl;
     }
 
@@ -87,19 +186,6 @@ private:
         }
         return q;
     }
-    void inorder(Node* n)
-    {
-        if (!n)
-        {
-            return;
-        }
-        else
-        {
-            inorder(n->nodes[0]);
-            cout << n->value << " ";
-            inorder(n->nodes[1]);
-        }
-    }
 };
 
 int main()
@@ -110,8 +196,16 @@ int main()
     t.Insert(9);
     t.Insert(3);
     t.Insert(10);
-    t.print();
-    t.Remove(5);
-    t.print();
+    t.Insert(1);
+    cout << "Exploracion InOrder" << endl;
+    t.print_InOrder();
+    cout << "Exploracion PreOrder" << endl;
+    t.print_PreOrder();
+    cout << "Exploracion PostOrder" << endl;
+    t.print_PostOrder();
+    cout << "Exploracion Reverse" << endl;
+    t.print_Reverse();
+    cout << "Exploracion por niveles" << endl;
+    t.print_level();
     return 0;
 }
