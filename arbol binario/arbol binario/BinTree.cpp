@@ -1,5 +1,7 @@
 #include <iostream>
 #include <queue>
+#include <stack>
+#include <minmax.h>
 using namespace std;
 
 struct Node
@@ -80,6 +82,21 @@ public:
             inorder(n->nodes[1]);
         }
     }
+    
+    void altura_arbol(Node* n, int l, int & L)
+    {
+        if (!n)
+        {
+            return;
+        }
+        if (l > L)
+        {
+            L = l;
+        }
+        altura_arbol(n->nodes[0], l + 1, L);
+        cout << n->value << " en el nivel " << l << endl;
+        altura_arbol(n->nodes[1], l + 1, L);
+    }
 
     void Reverse(Node* n)
     {
@@ -143,6 +160,51 @@ public:
         } 
     }
 
+    int que_tan_alto_soy(Node* n)
+    {
+        if (!n)
+        {
+            return 0;
+        }
+        int l = que_tan_alto_soy(n->nodes[0]);
+        int r = que_tan_alto_soy(n->nodes[1]);
+        cout << n->value << " ";
+        //return ((l>r)?l:r)+1;
+        return max(l, r) + 1;
+    }
+        
+    void InOrderStack(Node* n)
+    {
+        stack<pair<Node*,int>>s;
+        s.push(make_pair(n, 0));
+        while (!s.empty())
+        {
+            auto x = s.top();
+            switch (x.second)
+            {
+            case  0:
+                if (n->nodes[0])
+                {
+                    s.push(make_pair(n->nodes[0], 0));
+                }
+                x.second += 1;
+                s.push(make_pair(n, 0));
+            case 1:
+                cout << n->value << " ";
+                x.second += 1;
+                return;
+            case 2:
+                if (n->nodes[1])
+                {
+                    s.push(make_pair(n->nodes[1], 0));
+                }
+                x.second += 1;
+            case 3:
+                s.pop();
+            }
+        }
+    }
+
     void print_InOrder()
     {
         inorder(root);
@@ -170,6 +232,20 @@ public:
     void print_level()
     {
         level(root);
+        cout << endl;
+    }
+
+    void print_altura()
+    {
+        int L = 0;
+        altura_arbol(root, 0, L);
+        cout << endl;
+    }
+
+    void print_alter_altura()
+    {
+        int L = 0;
+        que_tan_alto_soy(root);
         cout << endl;
     }
 
@@ -207,5 +283,9 @@ int main()
     t.print_Reverse();
     cout << "Exploracion por niveles" << endl;
     t.print_level();
+    cout << "Hallando la altura del arbol" << endl;
+    t.print_altura(); 
+    cout << "Hallando la altura del arbol de manera alternativa" << endl;
+    t.print_alter_altura();
     return 0;
 }
