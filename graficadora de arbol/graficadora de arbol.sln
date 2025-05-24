@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "graficadora de arbol", "graficadora de arbol\graficadora de arbol.vcxproj", "{F510722D-E84A-4472-8469-CDD5684345ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F510722D-E84A-4472-8469-CDD5684345ED}.Debug|x64.ActiveCfg = Debug|x64
+		{F510722D-E84A-4472-8469-CDD5684345ED}.Debug|x64.Build.0 = Debug|x64
+		{F510722D-E84A-4472-8469-CDD5684345ED}.Debug|x86.ActiveCfg = Debug|Win32
+		{F510722D-E84A-4472-8469-CDD5684345ED}.Debug|x86.Build.0 = Debug|Win32
+		{F510722D-E84A-4472-8469-CDD5684345ED}.Release|x64.ActiveCfg = Release|x64
+		{F510722D-E84A-4472-8469-CDD5684345ED}.Release|x64.Build.0 = Release|x64
+		{F510722D-E84A-4472-8469-CDD5684345ED}.Release|x86.ActiveCfg = Release|Win32
+		{F510722D-E84A-4472-8469-CDD5684345ED}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8144BB1-BDC4-4E19-9721-1352283825A7}
+	EndGlobalSection
+EndGlobal
