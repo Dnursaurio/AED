@@ -82,8 +82,8 @@ public:
             inorder(n->nodes[1]);
         }
     }
-    
-    void altura_arbol(Node* n, int l, int & L)
+
+    void altura_arbol(Node* n, int l, int& L)
     {
         if (!n)
         {
@@ -157,7 +157,7 @@ public:
                 q.push(n->nodes[1]);
             }
             q.pop();
-        } 
+        }
     }
 
     int que_tan_alto_soy(Node* n)
@@ -172,10 +172,10 @@ public:
         //return ((l>r)?l:r)+1;
         return max(l, r) + 1;
     }
-        
+
     void InOrderStack(Node* n)
     {
-        stack<pair<Node*,int>>s;
+        stack<pair<Node*, int>>s;
         s.push(make_pair(n, 0));
         while (!s.empty())
         {
@@ -284,7 +284,7 @@ int main()
     cout << "Exploracion por niveles" << endl;
     t.print_level();
     cout << "Hallando la altura del arbol" << endl;
-    t.print_altura(); 
+    t.print_altura();
     cout << "Hallando la altura del arbol de manera alternativa" << endl;
     t.print_alter_altura();
     return 0;
