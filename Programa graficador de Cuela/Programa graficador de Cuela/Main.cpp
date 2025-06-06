@@ -302,11 +302,8 @@ int main(int argc, char** argv) {
     tree.Insert(7);
     tree.Insert(10);
     tree.Insert(23);
-    tree.Insert(30);
     tree.Insert(21);
     tree.Insert(24);
-    tree.Insert(29);
-    tree.Insert(31);
     tree.Insert(8);
     tree.Insert(6);
     tree.Insert(0);
