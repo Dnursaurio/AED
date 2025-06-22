@@ -24,6 +24,15 @@ struct Node {
 	Node* nodes[2];
 };
 
+//Funcion para los Threads
+void SumaNodos(vector<Node*>& p, vector<Node*>& h, int i)
+{
+	for (i; i < p.size(); i += 4)
+	{
+		p[i] = new Node(h[2 * i], h[2 * i + 1]);
+	}
+}
+
 // ==== VARIABLES PARA GLUT Y DIBUJO ====
 
 int window_width = 1500, window_height = 720;
@@ -147,31 +156,24 @@ void initGL() {
 // ==== MAIN ====
 
 int main(int argc, char** argv) {
-	vector<int> data = { 14,41,36,18,25,72,89,100 };
+	vector<int> data = { 14,41,36,18,25,72,89,100};
 	vector<Node*> hojas;
-	
+
 	for (int i = 0; i < data.size(); i++)
 		hojas.push_back(new Node(data[i]));
 
 	while (hojas.size() > 1) {
 		vector<Node*> nivelarriba(hojas.size() / 2);
-		vector<thread> hilos;
-		for (size_t i = 0; i + 1 < hojas.size(); i += 2)
+		vector<thread> hilos(4);
+
+		for (int i = 0; i < 4; i++)
 		{
-			hilos.emplace_back([&nivelarriba, &hojas, i]()
-			{
-				nivelarriba[i / 2] = new Node(hojas[i], hojas[i + 1]);
-			});
-		}
-			
-		for (size_t i = 0; i < hilos.size(); i++)
-		{
-			hilos[i].join();
+			hilos[i] = thread(SumaNodos, ref(nivelarriba), ref(hojas), i);
 		}
 
-		if (hojas.size() % 2 == 1)
+		for (int i = 0; i < 4; i++)
 		{
-			nivelarriba.push_back(hojas.back());
+			hilos[i].join();
 		}
 
 		hojas = nivelarriba;

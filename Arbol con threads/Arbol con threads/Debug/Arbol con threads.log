@@ -1,3 +1,4 @@
 ﻿  Main.cpp
-D:\AED\Arbol con threads\Arbol con threads\Main.cpp(153,20): warning C4018: '<': no coinciden signed/unsigned
+D:\AED\Arbol con threads\Arbol con threads\Main.cpp(30,12): warning C4018: '<': no coinciden signed/unsigned
+D:\AED\Arbol con threads\Arbol con threads\Main.cpp(162,20): warning C4018: '<': no coinciden signed/unsigned
   Arbol con threads.vcxproj -> D:\AED\Arbol con threads\Debug\Arbol con threads.exe
