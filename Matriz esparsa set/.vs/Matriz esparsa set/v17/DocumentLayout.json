@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\AED\\Matriz esparsa set\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3F05A9A-755C-4F5A-A338-570BF59A8EDF}|Matriz esparsa set\\Matriz esparsa set.vcxproj|D:\\AED\\Matriz esparsa set\\Matriz esparsa set\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F3F05A9A-755C-4F5A-A338-570BF59A8EDF}|Matriz esparsa set\\Matriz esparsa set.vcxproj|solutionrelative:Matriz esparsa set\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "D:\\AED\\Matriz esparsa set\\Matriz esparsa set\\Main.cpp",
+              "RelativeDocumentMoniker": "Matriz esparsa set\\Main.cpp",
+              "ToolTip": "D:\\AED\\Matriz esparsa set\\Matriz esparsa set\\Main.cpp",
+              "RelativeToolTip": "Matriz esparsa set\\Main.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-05T04:00:27.18Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
